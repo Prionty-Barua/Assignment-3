@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,42 +30,233 @@
         }
     </script>
 </head>
+
 <body>
+    <!-- prionty -->
     <nav class="flex items-center space-x-52 mt-8 pl-28">
         <div class="h-12 w-40">
             <img src="images/Group 2.png" alt="">
         </div>
-        <div class="flex items-center font-Garamond text-slate-500 justify-around space-x-6">
-            <h6>Home</h6>
-            <h6>Services</h6>
-            <h6>Cases</h6>
-            <h6>Blog</h6>
-            <h6 class="w-36">Contact Us</h6>
+        <div class="text-sm breadcrumbs">
+            <ul>
+                <li>Home</li>
+                <li><a>Services</a></li>
+                <li><a>Cases</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
         </div>
-        <div class="">
-            <button class="bg-yellow-800 text-white font-garamond w-44 h-12 rounded-xl">Free Consultation</button>
+        <div>
+            <!-- The button to open modal -->
+            <label for="my-modal" class="btn border-0 bg-yellow-800 text-white font-garamond w-44 h-12 rounded-xl">Free Consultation</label>
+            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia
+                        for free!</p>
+                    <div class="modal-action">
+                        <label for="my-modal" class="btn">Yay!</label>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
     </nav>
     <main>
         <!-- section 1 -->
-        <div class="pl-10 m-28 rounded-2xl">
+        <section class="pl-10 m-28 rounded-2xl">
             <div class="hero min-h-screen rounded-3xl"
                 style="background-image: url(images/lady-justice-law-library-concept.jpg);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
-                        <h1 class="mb-5 text-6xl font-garamond w-18/40 font-bold">We Provide Effective Legal Solutions</h1>
-                        <p class="mb-5">Our national flag is the symbol of our independence and sovereignty. We got independence through a bloody liberation war and we have lost millions of lives in the war. That is how we earn our national flag.</p>
+                        <h1 class="mb-5 text-4xl font- font-garamond w-18/40 font-extrabold">We Provide Effective Legal Solutions
+                        </h1>
+                        <p class="mb-5 text-center text-white text-sm">Our national flag is the symbol of our independence and sovereignty. We got
+                            independence through a bloody liberation war and we have lost millions of lives in the war.
+                            That is how we earn our national flag.</p>
                         <div class="form-control pl-16">
-                            <label class="input-group">
-                                <input type="text" placeholder="" class="input input-bordered"/>
+                            <label class="input-group rounded-xl">
+                                <input type="text" placeholder="" class="input input-bordered" />
                                 <span class="gap-4 bg-yellow-800 text-white w-18 h-12 rounded">search</span>
                             </label>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- section 2 -->
+        <!-- <section class="px-32 pt-10">
+            <div class="items-center justify-center">
+                <h1 class="text-center text-4xl pb-4 font-garamond font-extrabold">The Legal Practice Area</h1>
+                <p class="text-center ml-56 text-gray-500 w-7/12 ">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="px-32 pt-10">
+                <div class="grid grid-flow-row-dense gap-x-8  md:grid-cols-3">
+                    <div class="text-center box-border items-center justify-center">
+                        <img class="items-center" src="images/Group 10.png" alt="">
+                        <h1 class="justify-center pt-8">Business Law</h1>
+                        <p class="w-8/12">There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="images/Frame.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="images/Group 15.png" alt="">
+                        <h1 class="justify-center pt-8">Criminal Law</h1>
+                        <p class="w-8/12">There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="images/Frame.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <img src="images/layer1.png" alt="">
+                        <h1 class=" pt-8">Child Support</h1>
+                        <p class="w-8/12">There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="images/Frame.png" alt="">
+                    </div>
+                </div>
+                <hr class="m-6">
+                <div class="px-32 pt-10">
+                    <div grid grid-flow-row-dense gap-x-8 grid-cols-3>
+                        <div class="text-center">
+                            <img src="images/Group 12.png" alt="">
+                            <h1 class=" pt-8">Education Law</h1>
+                            <p class="w-8/12">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <img src="images/Frame.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="images/Group 16.png" alt="">
+                            <h1 class=" pt-8">Divorce Law</h1>
+                            <p class="w-8/12">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <img src="images/Frame.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <img src="images/Group 13.png" alt="">
+                            <h1 class=" pt-8">Tax Law</h1>
+                            <p class="w-8/12">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <img src="images/Frame.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section> -->
+        <!-- section 3 -->
+        <section class="px-32 pt-10 pb-14">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/Rectangle 6.png" class="w-full opacity-80" />
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle text-center ">❮</a>
+                        <div class="max-w-md items-center">
+                            <img class="bg-neutral-focus ml-36 text-neutral-content rounded-full w-12"
+                                src="images/man.jpg" alt="">
+                            <h1 class="mb-2 text-white text-center text-lg font-garamond w-18/40 font-bold">Awlad
+                                Hossain</h1>
+                            <p class="mb-2 text-white text-center text-md">UIX Designer</p>
+                            <p class=" h-2  text-center text-white text-sm">Our national flag is the symbol of our independence and sovereignty. We got
+                                independence through a bloody liberation war and we have lost millions of lives in the war.
+                                That is how we earn our national flag.</p>
+                            <div class="form-control pl-16">
+                            </div>
+                        </div>
+                        <a href="#slide2" class="btn btn-circle text-center">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 4 -->
+        <section class="pl-10 m-28 rounded-2xl text-center">
+            <div>
+                <h1 class="mb-5 text-3xl font-garamond w-18/40 font-bold">Frequently Asked Any Questions</h1>
+                <p class=" h-12 text-center text-sm">Our national flag is the symbol of our independence and sovereignty. We got independence through a bloody liberation war and we have lost millions of lives in the war.That is how we earn our national flag.</p>
+            </div>
+            <div class="flex gap-4">
+                <div>
+                    <div  class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            1.Difference between flexbox and grid?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            2.What is the purpose of media query?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>MediaQuery provides a higher-level view of the current app's screen size and can also give more detailed information about the device and its layout preferences.</p>
+                        </div>
+                      </div>
+                      <div  class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            3.What is CSS box-model?How Does it works?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>CSS Box Model is a module of CSS that defines the rectangular boxes—including their padding and margin—that are generated for elements and laid out according to the visual formatting model.
+                            A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model describes how these elements work together to create a box as displayed by CSS.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            4.What is semantic tag?How is works?Give Examples.
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>A semantic element clearly describes its meaning to both the browser and the developer.
+                            Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+                            Examples of semantic elements:form, table, and article tags Clearly defines its content.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="images/Framee.png" alt="">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <footer class="footer p-10 bg-black text-white text-base-content">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="Email " class="input input-bordered w-full pr-16" />
+                        <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
 </body>
+
 </html>
