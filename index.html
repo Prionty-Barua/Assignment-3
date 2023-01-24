@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:ital,wght@0,400;0,700;1,700&family=STIX+Two+Text&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    font: {
+                        garamond: ["EB Garamond", "serif"],
+                        sans: ["Open Sans", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="flex items-center space-x-52 mt-8 pl-28">
+        <div class="h-12 w-40">
+            <img src="images/Group 2.png" alt="">
+        </div>
+        <div class="flex items-center font-Garamond text-slate-500 justify-around space-x-6">
+            <h6>Home</h6>
+            <h6>Services</h6>
+            <h6>Cases</h6>
+            <h6>Blog</h6>
+            <h6 class="w-36">Contact Us</h6>
+        </div>
+        <div class="">
+            <button class="bg-yellow-800 text-white font-garamond w-44 h-12 rounded-xl">Free Consultation</button>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <!-- section 1 -->
+        <div class="pl-10 m-28 rounded-2xl">
+            <div class="hero min-h-screen rounded-3xl"
+                style="background-image: url(images/lady-justice-law-library-concept.jpg);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-6xl font-garamond w-18/40 font-bold">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5">Our national flag is the symbol of our independence and sovereignty. We got independence through a bloody liberation war and we have lost millions of lives in the war. That is how we earn our national flag.</p>
+                        <div class="form-control pl-16">
+                            <label class="input-group">
+                                <input type="text" placeholder="" class="input input-bordered"/>
+                                <span class="gap-4 bg-yellow-800 text-white w-18 h-12 rounded">search</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
